@@ -59,10 +59,10 @@ public class extractTweets {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setJSONStoreEnabled(true);
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("jeik7aMqi4bzjTeIIolQtIRRr")
-                .setOAuthConsumerSecret("Kd0K7YdcwVLJtg7ZQcmfAcnf9ju92WQmgIsfHvMXsiPnZzmcZE")
-                .setOAuthAccessToken("1455693448670031875-rlCLxvhatgl4yPsT4TUmKhHZ4R1DVr")
-                .setOAuthAccessTokenSecret("zKxzvr05WizZWpbMTwyamXE3g88AwXuCHkwszX1gmIFzd");
+                .setOAuthConsumerKey("")
+                .setOAuthConsumerSecret("")
+                .setOAuthAccessToken("")
+                .setOAuthAccessTokenSecret("");
         Twitter twitter = new TwitterFactory(cb.build()).getInstance();
         return twitter;
     }

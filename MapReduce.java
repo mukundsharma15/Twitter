@@ -19,11 +19,10 @@ public class MapReduce {
     }
     public static MongoDatabase mongoConnection() {
         //mongo connection with ReuterDb
-        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://root:password12345678@cluster0-" +
-                "shard-00-00.7asei.mongodb.net:27017," +
-                "cluster0-shard-00-01.7asei.mongodb.net:27017," +
-                "cluster0-shard-00-02.7asei.mongodb.net:27017/ReuterDb?ssl=true&replicaSet=atlas-oeu3y8-" +
-                "shard-0&authSource=admin&retryWrites=true&w=majority"));
+        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://root," +
+                "" +
+                "" +
+                ""));
         MongoDatabase reuterDB = mongoClient.getDatabase("ProcessedDB");
         return reuterDB;
     }
